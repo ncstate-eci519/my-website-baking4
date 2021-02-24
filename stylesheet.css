@@ -1,67 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-html{
-    background-color:#F5F5F5; 
+.center{
+	margin: auto;
+	display: block;
 }
-h1{
-    font-family: 'Arial', sans-serif; 
+.btn-primary{
+    background-color: #8FCBD9;
 }
-
-h2, h3{
-    font-family: 'Lobster', cursive;
-}
-p{
-    font-family: 'Arial', sans-serif;
-}
-h2{
-    color: #4C5C68;
-}
-h1{
-    color: #1985A1;
-}
-p{
-    color: #46494C;
-}
-ul{
-    color: #46494C;
-}
-ul{
-    font-family: 'Arial', sans-serif;
-}
-a:hover{
-    font-weight: bold;
-    font-size: larger;
-}
-ul{
-    list-style-type: none;
-}
-a{
-    color: #e63946;
-}
-.bullets{
-    list-style-type: circle;
-}
-nav{
-    background-color: #4C5C68;
-    padding: 10px;
-    margin: 5px;
-}
-nav ul{
-    list-style-type: none;
-    display: inline;
-    display: flex;
-    font-size: 20px;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin: 5px;
-    align-items: center;
-  }
-  nav a{
-    color: #F5F5F5;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-  @media print{
-      .navigation{
-          display:none;
-      }
-  }
