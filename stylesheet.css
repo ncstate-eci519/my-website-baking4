@@ -22,10 +22,11 @@ h2, h3{
 	 font-weight: bold;
  }
  a{
-	 color:indianred
+	 color:#0028F0
  }
  .btn-primary{
-	 background-color: indianred;
+	 background-color: #0028F0;
+	 border: #0028F0;
 	 
  }
  
