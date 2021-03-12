@@ -21,4 +21,11 @@ h2, h3{
  .card-header{
 	 font-weight: bold;
  }
+ a{
+	 color:indianred
+ }
+ .btn-primary{
+	 background-color: indianred;
+	 
+ }
  
