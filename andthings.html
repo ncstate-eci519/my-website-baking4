@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="stylesheet.css">
 		<script language="JavaScript" src="js/scripts.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -56,20 +55,20 @@
 	
 		  <button type="button" class="btn btn-large btn-primary" id="toggler">Toggle</button> 
 	
-		  <h1>What type of NC Barbeque is Best?</h1>
-<h2>Vote</h2>
-<form class="form-inline">
-   <label class="sr-only" for="bbqtype">BBQ Type</label>
-  <select class="custom-select my-1 mr-sm-2" id="bbqtype">
-    <option selected>Choose...</option>
-    <option value="tomato">Tomato</option>
-    <option value="vinegar">Vinegar</option>
-  </select>
-   <button type="button" id="submit" class="btn btn-primary mb-2">Submit</button>
-</form>
-<hr/>
-<h2>Results</h2>
-<canvas id="myChart" width="400" height="200"></canvas>
+		  <h1>What Operating System is Best?</h1>
+		  <h2>Vote</h2>
+		  <form class="form-inline">
+			 <label class="sr-only" for="os">Operating System</label>
+			<select class="custom-select my-1 mr-sm-2" id="os">
+			  <option selected>Choose...</option>
+			  <option value="windows">Windows</option>
+			  <option value="mac">Mac</option>
+			</select>
+			 <button type="button" id="submit" class="btn btn-primary mb-2">Submit</button>
+		  </form>
+		  <hr/>
+		  <h2>Results</h2>
+		  <canvas id="myChart" width="400" height="200"></canvas>
 	
 		</div>
 		

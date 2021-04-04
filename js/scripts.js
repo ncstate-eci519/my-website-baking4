@@ -1,44 +1,43 @@
 alert("Hi");
+
 $(document).ready(function(){
 	$("#toggler").click(function(){
         $(".card").toggle();
     });
 });
 
-Result Skip Results Iframe
-EDIT ON
-  var bbq = {};
-  bbq['tomato'] = 0;
-  bbq['vinegar'] = 0;
+var os = {};
+os['windows'] = 0;
+os['mac'] = 0;
 $(document).ready(function(){
-  
+
+drawChart();
+
+$("#submit").click(function(){
+    if($("#os").val()=="windows"){
+      os['windows']++;
+    }
+    if($("#os").val()=="mac"){
+        os['mac']++;
+     }
   drawChart();
-  
-  $("#submit").click(function(){
-      if($("#bbqtype").val()=="tomato"){
-        bbq['tomato']++;
-      }
-      if($("#bbqtype").val()=="vinegar"){
-          bbq['vinegar']++;
-       }
-    drawChart();
-  });
-  
-  function drawChart(){
-    var ctx = $('#myChart');
-    var myChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Vinegar', 'Tomato'],
-            datasets: [{
-                label: '# of Votes',
-                data: [bbq['vinegar'], bbq['tomato']],
-              backgroundColor:[
-                'tan',
-                'red'
-              ]
-            }]
-            }
-        });
-  }
-  });
+});
+
+function drawChart(){
+  var ctx = $('#myChart');
+  var myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+          labels: ['Windows', 'Mac'],
+          datasets: [{
+              label: '# of Votes',
+              data: [os['windows'], os['mac']],
+            backgroundColor:[
+              'blue',
+              'red'
+            ]
+          }]
+          }
+      });
+}
+});
