@@ -43,6 +43,8 @@ function drawChart(){
 });
 
 
+
+
 $(document).ready(function(){
   $("#dog-button").click(function(){
     var dog = $.get("https://dog.ceo/api/breeds/image/random");
