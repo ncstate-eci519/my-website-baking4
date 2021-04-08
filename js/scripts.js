@@ -1,4 +1,4 @@
-alert("Hi");
+alert("This Page is Under Construction");
 
 $(document).ready(function(){
 	$("#toggler").click(function(){
@@ -41,3 +41,17 @@ function drawChart(){
       });
 }
 });
+
+
+$(document).ready(function(){
+  $("#dog-button").click(function(){
+    var dog = $.get("https://dog.ceo/api/breeds/image/random");
+    
+    dog.done(function(response){
+      var dogData = response[0];
+      $("#dog").show();
+      $("#dog-img").attr("src", dogData.url);
+    });
+  });
+});
+
