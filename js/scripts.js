@@ -11,6 +11,15 @@ os['windows'] = 0;
 os['mac'] = 0;
 $(document).ready(function(){
 
+  $("#dog-button").click(function(){
+    var dog = $.get("https://dog.ceo/api/breeds/image/random");
+    
+    dog.done(function(response){
+      $("#dog").show();
+      $("#dog-img").attr("src", response.message);
+    });
+  });
+
 drawChart();
 
 $("#submit").click(function(){
@@ -41,19 +50,3 @@ function drawChart(){
       });
 }
 });
-
-
-
-
-$(document).ready(function(){
-  $("#dog-button").click(function(){
-    var dog = $.get("https://dog.ceo/api/breeds/image/random");
-    
-    dog.done(function(response){
-      var dogData = response[0];
-      $("#dog").show();
-      $("#dog-img").attr("src", dogData.url);
-    });
-  });
-});
-
