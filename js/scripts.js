@@ -85,7 +85,7 @@ $(document).ready(function(){
     var priority = $("#priority").val();
     //Basic error checking
     if(resource.length==0)return;
-    if(resource.length==0)return;
+    if(priority.length==0)return;
     
     //Add the new item to the array
     listItems[listItems.length] = {'resource': resource, 'priority': priority};
