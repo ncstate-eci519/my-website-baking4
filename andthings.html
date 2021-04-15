@@ -84,6 +84,45 @@
 	
 
 		</div>
+
+		<section class="container">
+			<h1>Resources I Want to Try</h1>
+			<table class="table table-bordered table-striped w-auto">
+			  <thead>
+				<tr>
+				  <th scope="col" class="th-sm">Delete</th>
+				  <th scope="col">Resource</th>
+				  <th scope="col">Priority</th>
+				</tr>
+			  </thead>
+			  <tbody>
+		  
+			  </tbody>
+			</table>
+			<button type="button" class="btn btn-large btn-primary" id="btn-delete">Delete Selected Item</button>
+		  </section>
+		  
+		  <hr/>
+		  
+		  <section class="container">
+			<h2>Add New Resource</h2>
+			<form id="add-form">
+			  <div class="form-group">
+				<label for="resource">Resource</label>
+				<input type="text" class="form-control" id="resource">
+			  </div>
+			  <div class="form-group">
+			  <label for="priority">Priority</label>
+			  <select class="form-control" id="priority">
+				<option>High</option>
+				<option>Medium</option>
+				<option>Low</option>
+			  </select>
+			  </div>
+		  
+			  <button id="add" class="btn btn-primary btn-large">Add New Resource</button>
+			</form>
+		  </section>
 		
 
 		<script
