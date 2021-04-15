@@ -1,4 +1,4 @@
-alert("This Page is Under Construction");
+
 
 $(document).ready(function(){
 	$("#toggler").click(function(){
