@@ -1,24 +1,11 @@
-alert("This Page is Under Construction");
 
-$(document).ready(function(){
-	$("#toggler").click(function(){
-        $(".card").toggle();
-    });
-});
 
 var os = {};
 os['windows'] = 0;
 os['mac'] = 0;
 $(document).ready(function(){
 
-  $("#dog-button").click(function(){
-    var dog = $.get("https://dog.ceo/api/breeds/image/random");
-    
-    dog.done(function(response){
-      $("#dog").show();
-      $("#dog-img").attr("src", response.message);
-    });
-  });
+
 
 drawChart();
 
